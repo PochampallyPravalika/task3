@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <form action="./response.html" method="post">
+        <fieldset>
+            <legend>Registration Form</legend>
+    <label for="uname">Username</label>
+    <input type="text" id="Uname" name="Username" pattern="(?=.*[A-Z])[A-Z]+
+    "title="Usename Must be in capital letters only" autofocus required ><br><br>
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" pattern="[a-z\d._]+@[a-z]+\.[a-z]{2,}$" 
+    title="only small letters,digits and @ are allowed" required ><br><br>
+    <label for="pwd">Password</label>
+    <input type="text" id="pwd" name="email"pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#%&])[a-zA-Z\d@#%&]{8,16}"
+    title="only small letters,capital letters,digits and @,#,%,& are allowed and range must be in 8 to 16" required>
+    <br><br>
+    <label for="unumber">Mobile Number</label>
+    <input type="text" id="unumber" name="Username" pattern="\+91[6-9][0-9]{9}" 
+    title="enter valid phone number" required ><br><br>
+    <label for="unumber">DOB</label>
+    <input type="text" id="unumber" name="Username" pattern="^(0[1-9]|[12]\d|3[01])/(0[0-9]|1[0-2])/(\d{4})" 
+    title="enter valid date of birth" required ><br><br>
+    <label for="State">Choose a State:</label>
+    <select name="state" id="State">
+    <option value="Telangana">Telangana</option>
+    <option value="Tamilnadu">Tamilnadu</option>
+    <option value="kerala">kerala</option>
+    <option value="AP">AP</option>
+    <option value="Maharastra">Maharastra</option>
+    <option value="Gujarat">Gujarat</option>
+    <option value="Goa">Goa</option>
+    <option value="Punjab">Punjab</option>
+    </select><br><br>
+    <label for="city">Choose your city from the list:</label>
+    <input list="cities" name="city" id="city">
+
+    <datalist id="cities">
+    <option value="Rajanna sircilla">
+    <option value="Siddipet">
+    <option value="Karimnagar">
+    <option value="Kamareddy">
+    <option value="Warangal">
+    <option value="Hanmakonda">
+    <option value="Hydederabad">
+    </datalist><br><br>
+    <input type="submit" value="login">
+        </fieldset>
+    </form>
+    </center>
+</body>
+</html>
